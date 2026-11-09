@@ -111,7 +111,7 @@ export function ToolkitDock() {
   const reset = () => { setActive(null); animateTo(resting()) }
 
   return <div className="toolkit-dock" onPointerLeave={reset}>
-    <div ref={row} className="toolkit-dock__row" role="group" aria-label="My toolkit" onPointerMove={move}
+    <div ref={row} className="toolkit-dock__row" role="group" aria-label="常用工具" onPointerMove={move}
       onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) reset() }}>
       {aboutToolkit.map((tool, index) => <button key={tool.src} ref={element => { buttons.current[index] = element }}
         type="button" className="toolkit-dock__item" aria-label={tool.name}

@@ -36,9 +36,9 @@ export function AboutPage() {
           </section>)}
         </div>
       </section>
-      <section className="about-toolkit" aria-labelledby="toolkit-title"><h2 id="toolkit-title">My toolkit</h2><ToolkitDock /></section>
+      <section className="about-toolkit" aria-labelledby="toolkit-title"><h2 id="toolkit-title">常用工具</h2><ToolkitDock /></section>
       <section className="about-life" aria-labelledby="life-title">
-        <h2 id="life-title">Outside of work</h2>
+        <h2 id="life-title">工作之余</h2>
         <div className="about-life__grid">
           <img className="about-life__dog" src="/images/about/life-01.webp" alt="生活里的小狗" loading="lazy" decoding="async" />
           <div className="about-life__column">

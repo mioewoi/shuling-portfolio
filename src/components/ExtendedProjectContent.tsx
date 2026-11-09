@@ -1,8 +1,9 @@
+import { MaryCelesteImage } from './MaryCelesteImage'
 import { extendedProjectMedia } from '../data/extendedProjectMedia'
 import { caseOverviews } from '../data/extendedProjectContent'
 import { DetailImage, DetailImageSequence, DetailVideo } from './ProjectDetailMedia'
 
-export const extendedProjectSlugs = ['mobile-exploration', 'baidu-netdisk', 'secondhand-bookshop', 'chess-box'] as const
+export const extendedProjectSlugs = ['mobile-exploration', 'baidu-netdisk', 'secondhand-bookshop', 'chess-box', 'pavilions', 'mary-celeste'] as const
 export function hasExtendedProject(slug: string) {
   return (extendedProjectSlugs as readonly string[]).includes(slug)
 }
@@ -19,6 +20,15 @@ function GalleryHeading({ note }: { note?: string }) {
 }
 /** Per-project composition: a portrait demo, continuous PDF pages, or ordered editorial images. */
 export function ExtendedProjectContent({ slug, title }: { slug: string; title: string }) {
+  if (slug === 'pavilions') {
+    const [cover, ...pages] = extendedProjectMedia.pavilions
+    return <><DetailImage image={cover} title={`${title} · 封面`} eager /><Overview slug={slug} />
+      <section className="case-study__editorial-gallery"><div className="section-heading case-study__gallery-heading"><div><p className="eyebrow">02 / GALLERY</p><h2>设计呈现</h2></div><span className="section-note">探索形式、媒介与表达的更多可能</span></div><DetailImageSequence images={pages} title={title} /></section></>
+  }
+  if (slug === 'mary-celeste') return <><MaryCelesteImage /><Overview slug={slug} />
+    <section className="case-study__book-information detail-section"><div><p className="eyebrow">02 / INFORMATION</p><h2>基础信息</h2></div>
+      <dl className="case-study__facts">{[['01', '尺寸', '2m * 2m'], ['02', '纸张', '牛皮纸']].map(([number, label, value]) => <div key={number}><span aria-hidden="true">{number}</span><div><dt>{label}</dt><dd>{value}</dd></div></div>)}</dl>
+    </section></>
   if (slug === 'mobile-exploration') return <><DetailVideo /><Overview slug={slug} /></>
   if (slug === 'baidu-netdisk') return <DetailImageSequence images={extendedProjectMedia[slug]} title={title} eager />
   if (slug === 'secondhand-bookshop') {

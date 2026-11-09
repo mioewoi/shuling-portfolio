@@ -1,3 +1,4 @@
+import { Icon } from './Icon'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 
@@ -50,7 +51,7 @@ export function ContactDialog({ children, onClosed }: { children: ReactNode; onC
       <div className="contact-dialog__content">
       <button type="button" className="contact-dialog__close" aria-label="关闭 Contact Me" onClick={dismiss} autoFocus>
         <span>关闭</span>
-        <img src="/images/contact/close.svg" width="16" height="16" alt="" />
+        <Icon name="close" />
       </button>
       {children}
       </div>

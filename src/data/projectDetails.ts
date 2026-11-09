@@ -12,6 +12,16 @@ interface ProjectDetail {
 }
 
 export const projectDetails: Record<string, ProjectDetail> = {
+  pavilions: {
+    title: '展示设计 · 系列凉亭',
+    summary: '以模块化结构为基础，通过翻折、拼接与重复组合，衍生露天看台、环状市集等多功能公共空间，探索展示装置的灵活性与场景适应性。',
+    role: '设计师', date: '2025.3–2025.4', nextProjectId: 'mary-celeste',
+  },
+  'mary-celeste': {
+    title: '内容与图解 · 玛丽·塞勒斯特之谜',
+    summary: '以玛丽·塞勒斯特号幽灵船悬案为主题，通过历史文献搜集、线索归档与关联分析，推导八大事件猜想，并以航海罗盘为视觉原型，呈现可视化图解。',
+    role: '小组负责人', date: '2024.11–2024.12', nextProjectId: 'luxreal',
+  },
   luxreal: {
     title: 'LuxReal互动影游导演台',
     summary: '优化导演台节点体系与画布交互。通过节点简化、网格布局及工作流引导，降低复杂剧情的理解与编辑成本，兼顾新手用户的易用性与专业创作团队的生产效率。',

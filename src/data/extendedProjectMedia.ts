@@ -9,6 +9,11 @@ export interface DetailMedia {
 }
 
 export const extendedProjectMedia: Record<string, DetailMedia[]> = {
+  pavilions: [1, 2, 3, 4, 5].map(page => ({ page,
+    src: `/images/projects/pavilions/image-${String(page).padStart(2, '0')}-2560.webp`,
+    preview: `/images/projects/pavilions/image-${String(page).padStart(2, '0')}-1280.webp`,
+    width: 2560, height: 1810, previewWidth: 1280,
+  })),
   "baidu-netdisk": [
     {
       "page": 1,

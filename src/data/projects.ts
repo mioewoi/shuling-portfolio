@@ -35,5 +35,6 @@ export const projects: Project[] = [
   { ...shared, id: '07', slug: 'visual-exploration', title: '视觉表达探索', category: '视觉设计', summary: '第二个视觉项目 · 内容待补充', featured: false, artwork: 'visual' },
   { ...shared, id: '08', slug: 'secondhand-bookshop', title: '二手书屋 · 书籍设计', category: '学校项目', summary: '以档案库逻辑重编古贺稔章访谈，打造多线索阅读体验', featured: false, artwork: 'abstract' },
   { ...shared, id: '09', slug: 'chess-box', title: '棋盒 · 策展&视觉', category: '学校项目', summary: '打造棋盒结构的可携式微型展览，融合棋的造型美学与参与式策展', featured: false, artwork: 'abstract' },
-  ...Array.from({ length: 2 }, (_, i): Project => ({ ...shared, id: String(i + 10).padStart(2, '0'), slug: `school-${i + 3}`, title: `学校项目 ${String(i + 3).padStart(2, '0')}`, category: '学校项目', summary: '创作与学习中的探索 · 内容待补充', featured: false, artwork: 'abstract' })),
+  { ...shared, id: '10', slug: 'pavilions', title: '展示设计 · 系列凉亭', category: '学校项目', summary: '以模块化翻板结构设计系列凉亭，适配展示、休憩与市集', featured: false, artwork: 'abstract' },
+  { ...shared, id: '11', slug: 'mary-celeste', title: '内容与图解 · 玛丽·塞勒斯特之谜', category: '学校项目', summary: '以航海罗盘为视觉原型，呈现可视化图解。', featured: false, artwork: 'abstract' },
 ]

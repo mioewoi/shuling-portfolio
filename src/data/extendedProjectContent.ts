@@ -1,6 +1,8 @@
 /** Copy already approved in the project index or read from the corresponding Figma frame. */
 export interface CaseOverview { heading?: string; body?: string; items?: { number: string; title: string; body: string }[] }
 export const caseOverviews: Record<string, CaseOverview> = {
+  pavilions: { body: '本项目以模块化、可变形与多场景适配为核心，探索公共空间中展示装置的灵活应用。通过设计可翻折、可拼接的基础结构单元，利用重复、叠加与组合形成不同尺度和功能的空间形态。\n\n在此基础上延伸出露天凉亭看台、环状市集等系列方案，将展示、休憩、观景与公共交流等功能融入空间设计，探索模块化结构在不同公共场景中的应用可能。' },
+  'mary-celeste': { body: '以“玛丽·塞勒斯特号”幽灵船悬案为研究对象，从调查员视角展开线索追溯。通过搜集、阅读与整理历史文献及相关书籍，将资料归纳为背景信息与可疑线索，梳理事件之间的关联，推导出八种可能的事件真相。最终以航海罗盘为视觉原型，结合环形信息架构与档案式视觉语言，将复杂的调查过程转化为可阅读、可探索的信息可视化作品。' },
   'mobile-exploration': {
   "items": [
     {

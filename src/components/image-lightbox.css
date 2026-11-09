@@ -1,0 +1,20 @@
+.image-lightbox { position: fixed; inset: 0; width: 100%; height: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent; color: #fff; }
+.image-lightbox::backdrop { background: rgb(0 0 0 / 86%); backdrop-filter: blur(8px); }
+.image-lightbox__stage { position: absolute; inset: 64px 24px 88px; overflow: hidden; touch-action: none; user-select: none; }
+.image-lightbox__image { position: absolute; top: 50%; left: 50%; }
+.image-lightbox__stage img { display: block; max-width: none; max-height: none; object-fit: contain; user-select: none; -webkit-user-drag: none; }
+.image-lightbox__tile { position: absolute; }
+.image-lightbox__stage p { position: absolute; inset: 45% 0 auto; text-align: center; }
+.image-lightbox__stage[data-draggable="true"] { cursor: grab; }
+.image-lightbox__stage[data-dragging="true"] { cursor: grabbing; }
+.image-lightbox button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; background: transparent; color: inherit; cursor: pointer; border-radius: 8px; min-width: 44px; min-height: 44px; padding: 8px; }
+.image-lightbox button:hover { background: #ffffff20; }
+.image-lightbox button:focus-visible { outline: 2px solid white; outline-offset: 2px; }
+.image-lightbox button:disabled { opacity: .35; cursor: default; }
+.image-lightbox .image-lightbox__close { position: absolute; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right)); z-index: 2; border-radius: 50%; background: #ffffff20; }
+.image-lightbox__toolbar { position: absolute; bottom: max(20px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 4px; max-width: calc(100% - 24px); padding: 6px 12px; border: 1px solid #ffffff20; border-radius: 32px; background: rgb(100 100 94 / 80%); backdrop-filter: blur(16px); opacity: 0; transition: opacity .18s; font-size: 12px; white-space: nowrap; }
+.image-lightbox:hover .image-lightbox__toolbar, .image-lightbox__toolbar:focus-within { opacity: 1; }
+.image-lightbox__toolbar output { min-width: 46px; text-align: center; font-variant-numeric: tabular-nums; }
+.image-lightbox__divider { height: 24px; border-left: 1px solid #ffffff30; margin-inline: 6px; }
+@media (hover: none), (max-width: 600px) { .image-lightbox__toolbar { opacity: 1; padding: 4px 8px; gap: 0; } .image-lightbox__toolbar button > span:not(.functional-icon) { display: none; } .image-lightbox__stage { inset: 64px 12px 88px; } }
+@media (prefers-reduced-motion: reduce) { .image-lightbox__toolbar { transition: none; } }

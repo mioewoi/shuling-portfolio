@@ -1,3 +1,4 @@
+import { Icon } from './Icon'
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import type { PointerEvent } from 'react'
 import { createPortal } from 'react-dom'
@@ -81,8 +82,8 @@ export function OutroSection() {
     <button className="portfolio-outro__back" type="button" onClick={() => {
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' })
     }}>
-      <svg viewBox="0 0 18 10" width="18" height="10" aria-hidden="true"><path d="M0 10 9 0l9 10Z" fill="currentColor" /></svg>
-      <span>Back to Top</span>
+      <Icon name="up" width={18} height={10} />
+      <span>回到顶部</span>
     </button>
     {/* A body portal keeps the fixed cursor outside the planet's clipped/3D layers. */}
     {createPortal(<span ref={cursorRef} className="outro-cursor" data-visible={cursorVisible} aria-hidden="true">

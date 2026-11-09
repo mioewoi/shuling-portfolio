@@ -71,12 +71,12 @@ export const allProjects: ExplorationProject[] = [
     id: 'pavilions', title: '展示设计 · 系列凉亭', category: '学校项目', type: '学校项目',
     date: '2025.3–2025.4',
     description: '以模块化翻板结构设计系列凉亭，适配展示、休憩与市集',
-    cover: '/images/explorations/pavilions.webp', detailUrl: null,
+    cover: '/images/explorations/pavilions.webp', detailUrl: '/projects/pavilions',
   },
   {
     id: 'mary-celeste', title: '内容与图解 · 玛丽·塞勒斯特之谜', category: '学校项目', type: '学校项目',
     date: '2024.11–2024.12',
     description: '创作与学习中的探索 · 内容待补充',
-    cover: '/images/explorations/mary-celeste.webp', detailUrl: null,
+    cover: '/images/explorations/mary-celeste.webp', detailUrl: '/projects/mary-celeste',
   },
 ]
