@@ -1,0 +1,181 @@
+{
+  "project": "luxreal",
+  "sourcePdf": "实习+B站+小象10.7整合.pdf",
+  "firstPage": 4,
+  "lastPage": 22,
+  "count": 19,
+  "pages": [
+    {
+      "page": 4,
+      "src": "/images/projects/luxreal/pdf-page-004.webp",
+      "preview": "/images/projects/luxreal/pdf-page-004-1280.webp",
+      "width": 2560,
+      "height": 2870,
+      "bytes": 1091298,
+      "sha256": "b8bb212f7e598dd7fa47b2f097db92844c868f7c1248cd6895ccd371a4e0c42f"
+    },
+    {
+      "page": 5,
+      "src": "/images/projects/luxreal/pdf-page-005.webp",
+      "preview": "/images/projects/luxreal/pdf-page-005-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 769888,
+      "sha256": "0c78e94eef359fb36e2a32d1f20f6ad6c3d7a6c7538ea370aef1d97e7789807e"
+    },
+    {
+      "page": 6,
+      "src": "/images/projects/luxreal/pdf-page-006.webp",
+      "preview": "/images/projects/luxreal/pdf-page-006-1280.webp",
+      "width": 2560,
+      "height": 2386,
+      "bytes": 988258,
+      "sha256": "bb12b761ddd968c0a05b511e107e0045c9366a4b609779873052e7a49e70ef58"
+    },
+    {
+      "page": 7,
+      "src": "/images/projects/luxreal/pdf-page-007.webp",
+      "preview": "/images/projects/luxreal/pdf-page-007-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 585928,
+      "sha256": "7b8ea0e09904bed54f97b08b20a8b82722f29585ce13b3b1340ea0352cdf13f8"
+    },
+    {
+      "page": 8,
+      "src": "/images/projects/luxreal/pdf-page-008.webp",
+      "preview": "/images/projects/luxreal/pdf-page-008-1280.webp",
+      "width": 2560,
+      "height": 1571,
+      "bytes": 993664,
+      "sha256": "37ba8850be6f578c8984563da92fb4af415cfca6e7663e6ca8e8e64e0bd57b33"
+    },
+    {
+      "page": 9,
+      "src": "/images/projects/luxreal/pdf-page-009.webp",
+      "preview": "/images/projects/luxreal/pdf-page-009-1280.webp",
+      "width": 2560,
+      "height": 2455,
+      "bytes": 974656,
+      "sha256": "69595c6c01242f54c2dba96879c63ad62cebeb808d0369effa40478a47f30229"
+    },
+    {
+      "page": 10,
+      "src": "/images/projects/luxreal/pdf-page-010.webp",
+      "preview": "/images/projects/luxreal/pdf-page-010-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 472816,
+      "sha256": "64404084f730f6f97b1b0d7e3095160f08c41f94979be40572df36e37c2d19cd"
+    },
+    {
+      "page": 11,
+      "src": "/images/projects/luxreal/pdf-page-011.webp",
+      "preview": "/images/projects/luxreal/pdf-page-011-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 636234,
+      "sha256": "cfa1d9759e9d13c1932df906d07933c970f4b0579614257903ea55547303c99a"
+    },
+    {
+      "page": 12,
+      "src": "/images/projects/luxreal/pdf-page-012.webp",
+      "preview": "/images/projects/luxreal/pdf-page-012-1280.webp",
+      "width": 2560,
+      "height": 2538,
+      "bytes": 1173068,
+      "sha256": "f2cd00ac3742e43ee05cb2e91014cb696f93fc23e46b06b17e5f4955d3afb800"
+    },
+    {
+      "page": 13,
+      "src": "/images/projects/luxreal/pdf-page-013.webp",
+      "preview": "/images/projects/luxreal/pdf-page-013-1280.webp",
+      "width": 2560,
+      "height": 2976,
+      "bytes": 1616978,
+      "sha256": "0db5ebb43675f93e6f362406004700c2efe92773c9816a36430b591f134b3ea2"
+    },
+    {
+      "page": 14,
+      "src": "/images/projects/luxreal/pdf-page-014.webp",
+      "preview": "/images/projects/luxreal/pdf-page-014-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 584468,
+      "sha256": "dfc2cbd28a2d3bafc3d2f77187d8e9d42d0d3a4b5933b91e267ee5a254d470fd"
+    },
+    {
+      "page": 15,
+      "src": "/images/projects/luxreal/pdf-page-015.webp",
+      "preview": "/images/projects/luxreal/pdf-page-015-1280.webp",
+      "width": 2560,
+      "height": 2139,
+      "bytes": 1044328,
+      "sha256": "953aac13080d76e1a5ceae66dd30d38b98f57cc2076d786b5349bbb10d6ef0ba"
+    },
+    {
+      "page": 16,
+      "src": "/images/projects/luxreal/pdf-page-016.webp",
+      "preview": "/images/projects/luxreal/pdf-page-016-1280.webp",
+      "width": 2560,
+      "height": 2140,
+      "bytes": 1612456,
+      "sha256": "a8427aadac113a48fd02971f7f510984c183d3a9015531f74123ceb6ed4486fe"
+    },
+    {
+      "page": 17,
+      "src": "/images/projects/luxreal/pdf-page-017.webp",
+      "preview": "/images/projects/luxreal/pdf-page-017-1280.webp",
+      "width": 2560,
+      "height": 1466,
+      "bytes": 627848,
+      "sha256": "10a22a7082a19876f3caaded0b56416f8fe9758c4959e18baeadd2b923134c14"
+    },
+    {
+      "page": 18,
+      "src": "/images/projects/luxreal/pdf-page-018.webp",
+      "preview": "/images/projects/luxreal/pdf-page-018-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 676146,
+      "sha256": "5bb48fa98612945f8a458824bbed45fa9fc0f8c0f9d61e4f5c4cc0a9144fe087"
+    },
+    {
+      "page": 19,
+      "src": "/images/projects/luxreal/pdf-page-019.webp",
+      "preview": "/images/projects/luxreal/pdf-page-019-1280.webp",
+      "width": 2560,
+      "height": 1306,
+      "bytes": 655356,
+      "sha256": "f5322721d1488bc1ea5695c9375cc14dc336370e3c04551d42a448583dfdf24a"
+    },
+    {
+      "page": 20,
+      "src": "/images/projects/luxreal/pdf-page-020.webp",
+      "preview": "/images/projects/luxreal/pdf-page-020-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 764792,
+      "sha256": "999d655f60b5730ae6168d29abace9296e7c13d3391e7b9b708014b7ddd25c4d"
+    },
+    {
+      "page": 21,
+      "src": "/images/projects/luxreal/pdf-page-021.webp",
+      "preview": "/images/projects/luxreal/pdf-page-021-1280.webp",
+      "width": 2560,
+      "height": 1683,
+      "bytes": 950808,
+      "sha256": "c6857261a3c3bd643716b097f015a96539ad2fe4d49aa33d9a7a4ccc227eb283"
+    },
+    {
+      "page": 22,
+      "src": "/images/projects/luxreal/pdf-page-022.webp",
+      "preview": "/images/projects/luxreal/pdf-page-022-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 755078,
+      "sha256": "a20379ddfb4ca20aa5c7f2c296718f664d9e096665b249db62a38f291d336581"
+    }
+  ],
+  "imageFormat": "Lossless WebP; full-page compositions; 2560px and 1280px widths"
+}

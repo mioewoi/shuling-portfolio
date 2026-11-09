@@ -1,0 +1,46 @@
+/* Figma 399:729: 437 × 264, 20px inset, square corners, #1b1b1b. */
+.contact-dialog {
+  position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none;
+  margin: 0; padding: 16px; border: 0; background: rgb(0 0 0 / 60%); color: #fff;
+  overflow: hidden; overscroll-behavior: contain; opacity: 0; transition: opacity 200ms ease;
+}
+.contact-dialog[open] { display: grid; place-items: center; }
+.contact-dialog::backdrop { background: transparent; }
+.contact-dialog[data-visible="true"] { opacity: 1; transition-duration: 300ms; }
+.contact-dialog__card {
+  position: relative; width: min(437px,100%); max-height: 100%; overflow: auto;
+  background: #1b1b1b; color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 10px; line-height: 14px;
+  transform: translateY(12px) scale(.96); transition: transform 200ms ease;
+  overscroll-behavior: contain;
+}
+.contact-dialog__content { position: relative; min-height: 264px; padding: 20px 20px 44px; }
+.contact-dialog[data-visible="true"] .contact-dialog__card { transform: translateY(0) scale(1); transition: transform 300ms cubic-bezier(.2,.7,.2,1); }
+.contact-dialog__heading { border-bottom: 1px solid #ffffff14; padding-bottom: 12px; }
+.contact-dialog__heading h2 { margin: 0; font-size: 14px; font-weight: 500; line-height: 20px; letter-spacing: 0; padding-right: 58px; }
+.contact-dialog__heading p { margin-top: 4px; color: #9b9da3; font-size: 10px; line-height: 14px; }
+.contact-dialog__close { position: absolute; right: 20px; top: 22px; display: flex; align-items: center; gap: 4px; padding: 0; border: 0; background: none; color: #7e7e86; font-size: 12px; line-height: 16px; }
+.contact-dialog__close img { opacity: .5; }
+.contact-dialog__close:hover { color: #fff; }
+.contact-dialog__close:hover img { opacity: 1; }
+.contact-dialog__body { display: grid; grid-template-columns: 165px minmax(0,1fr); gap: 20px; padding-top: 12px; }
+.contact-dialog__channels { margin: 0; display: grid; gap: 14px; }
+.contact-dialog__channels dt,.contact-dialog__opportunity>p { color: #9b9da3; margin-bottom: 4px; }
+.contact-dialog__channels dd { margin: 0; }
+.contact-dialog__email dd { display: flex; align-items: center; gap: 6px; }
+.contact-dialog__copy { display: inline-flex; flex: none; padding: 0; border: 0; color: #9b9da3; background: none; opacity: 0; }
+.contact-dialog__email:hover .contact-dialog__copy,.contact-dialog__email:focus-within .contact-dialog__copy { opacity: 1; }
+.contact-dialog__channels a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.contact-dialog__rule { margin-top: 12px; width: calc(100% - 73px); border-top: 1px solid #ffffff14; }
+.contact-dialog__qr { position: absolute; right: 20px; bottom: 20px; width: 53px; height: 53px; object-fit: contain; }
+.contact-dialog__status { position: absolute; bottom: 20px; left: 20px; max-width: calc(100% - 110px); font-size: 10px; color: #b8b9be; }
+.portfolio-nav__links .contact-trigger { position: relative; padding: 12px 0; border: 0; background: none; color: #aaa8a6; font-size: 14px; transition: color .2s ease; }
+.portfolio-nav__links .contact-trigger:hover { color: #f5f4f2; }
+@media(max-width:600px) { .portfolio-nav__links .contact-trigger { font-size: 11px; } }
+@media(max-width:468px) {
+  .contact-dialog__body { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+  .contact-dialog__email dd { flex-wrap: wrap; gap: 2px; }
+  .contact-dialog__email a { overflow-wrap: anywhere; }
+  .contact-dialog__copy { opacity: 1; }
+}
+@media(prefers-reduced-motion:reduce) { .contact-dialog,.contact-dialog__card { transition: none; transform: none; } }

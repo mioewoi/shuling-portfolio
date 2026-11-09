@@ -1,0 +1,298 @@
+{
+  "project": "bilibili-manga",
+  "sourcePdf": "实习+B站+小象10.7整合.pdf",
+  "firstPage": 24,
+  "lastPage": 55,
+  "count": 32,
+  "pages": [
+    {
+      "page": 24,
+      "src": "/images/projects/bilibili-manga/pdf-page-024.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-024-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1378368,
+      "sha256": "76ae8e0848d4feebc3a8825221d95989534defdb3ad1f408526d6bf653d49a0d"
+    },
+    {
+      "page": 25,
+      "src": "/images/projects/bilibili-manga/pdf-page-025.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-025-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1353772,
+      "sha256": "c6322d2f39fbe428b6cc543c63c2bb2de7009c1c829bff4907d32c7afdf77913"
+    },
+    {
+      "page": 26,
+      "src": "/images/projects/bilibili-manga/pdf-page-026.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-026-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 699490,
+      "sha256": "9a49bb3a07b99e859c1ee271897e676e11eb884a58f4b7cb35c2f3ce776f9925"
+    },
+    {
+      "page": 27,
+      "src": "/images/projects/bilibili-manga/pdf-page-027.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-027-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1349672,
+      "sha256": "3cad92bdb8ec04796a962e61882093ee99cb011fccbf640e5df3223fec384725"
+    },
+    {
+      "page": 28,
+      "src": "/images/projects/bilibili-manga/pdf-page-028.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-028-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1039998,
+      "sha256": "d7617b421460d00f73265c38627fef092fddf382be52dfdbc4cc8843ab64c833"
+    },
+    {
+      "page": 29,
+      "src": "/images/projects/bilibili-manga/pdf-page-029.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-029-1280.webp",
+      "width": 2560,
+      "height": 2466,
+      "bytes": 1045328,
+      "sha256": "76138d2faf476688dd0855e6c49bd4c21e3ef1dfd0effbb0010d0f88eef9728b"
+    },
+    {
+      "page": 30,
+      "src": "/images/projects/bilibili-manga/pdf-page-030.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-030-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 704592,
+      "sha256": "255ee50ca5b0054411934a63c847ed9832e69e4381f2b106034a1c575ecd889c"
+    },
+    {
+      "page": 31,
+      "src": "/images/projects/bilibili-manga/pdf-page-031.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-031-1280.webp",
+      "width": 2560,
+      "height": 2055,
+      "bytes": 942814,
+      "sha256": "68238c886d0a7eb2c3c77ae1d06d5cdc908ba05aab2d8c55f2f5a6cacf7f756b"
+    },
+    {
+      "page": 32,
+      "src": "/images/projects/bilibili-manga/pdf-page-032.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-032-1280.webp",
+      "width": 2560,
+      "height": 2402,
+      "bytes": 2841084,
+      "sha256": "8309886d7cb8074b45560e58ccbd0c475698d5731a3983efc07cb5d02a38c5fd"
+    },
+    {
+      "page": 33,
+      "src": "/images/projects/bilibili-manga/pdf-page-033.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-033-1280.webp",
+      "width": 2560,
+      "height": 1987,
+      "bytes": 1734788,
+      "sha256": "7ee3376f3e6540f536c3ea3af1d01482050c4b00d5be7866d89d64a7b579104c"
+    },
+    {
+      "page": 34,
+      "src": "/images/projects/bilibili-manga/pdf-page-034.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-034-1280.webp",
+      "width": 2560,
+      "height": 1284,
+      "bytes": 565206,
+      "sha256": "2cacf80898febb1c3772587f2fdc84bb73298e2d9480e11cbe3c506ca100f6ee"
+    },
+    {
+      "page": 35,
+      "src": "/images/projects/bilibili-manga/pdf-page-035.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-035-1280.webp",
+      "width": 2560,
+      "height": 1974,
+      "bytes": 1465066,
+      "sha256": "c28f9fbb21f3fb8fe94ac12223d8b2e3ef022581f1bd1d507c8d5492c29c2d19"
+    },
+    {
+      "page": 36,
+      "src": "/images/projects/bilibili-manga/pdf-page-036.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-036-1280.webp",
+      "width": 2560,
+      "height": 2047,
+      "bytes": 2543440,
+      "sha256": "f669ba778c81d548d20539b7c9daff7468baeb86bd13f82004aea304fb07d661"
+    },
+    {
+      "page": 37,
+      "src": "/images/projects/bilibili-manga/pdf-page-037.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-037-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1853560,
+      "sha256": "fa7561f29f81302992a494295999511a8c2e50fee6e5e9a8a319b56b35fbea51"
+    },
+    {
+      "page": 38,
+      "src": "/images/projects/bilibili-manga/pdf-page-038.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-038-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1875634,
+      "sha256": "e69e7b1aa53cfce5f3aa714b57e4c2e747ba900656db3a5dd03edc845d9fdd4e"
+    },
+    {
+      "page": 39,
+      "src": "/images/projects/bilibili-manga/pdf-page-039.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-039-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 768038,
+      "sha256": "6416fbfeb5af2cf61e939857c0d5f461f293d30e01b4e4771b6ec28350df0cb0"
+    },
+    {
+      "page": 40,
+      "src": "/images/projects/bilibili-manga/pdf-page-040.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-040-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1419172,
+      "sha256": "4d926cb92b5756d734cbdf2d4162cb351e3b0348ba827b1feb6ed231d9511542"
+    },
+    {
+      "page": 41,
+      "src": "/images/projects/bilibili-manga/pdf-page-041.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-041-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 921916,
+      "sha256": "fb6c9d49ff2fe64d82e909ea4a2fa1c3e16e336dc33f14c05d7e9d962189be5b"
+    },
+    {
+      "page": 42,
+      "src": "/images/projects/bilibili-manga/pdf-page-042.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-042-1280.webp",
+      "width": 2560,
+      "height": 1983,
+      "bytes": 1435766,
+      "sha256": "e58d23b3e5d1f728d10f79ee2e3698a49f81f7e5ef342ae6470a2c8e69066732"
+    },
+    {
+      "page": 43,
+      "src": "/images/projects/bilibili-manga/pdf-page-043.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-043-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1429148,
+      "sha256": "764478e5a9ed4afb57d2c162e397922a4aa9f74eecf9818ada5a6e35ed2123fb"
+    },
+    {
+      "page": 44,
+      "src": "/images/projects/bilibili-manga/pdf-page-044.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-044-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 2079560,
+      "sha256": "1e89f642d253b5710a166514126fd7c700b08675608c3ce5989eedcf2ff283fe"
+    },
+    {
+      "page": 45,
+      "src": "/images/projects/bilibili-manga/pdf-page-045.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-045-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 972818,
+      "sha256": "69668971d8e2dc172ea313b9d294853f6e43466b21b50f1e468d3844c3286895"
+    },
+    {
+      "page": 46,
+      "src": "/images/projects/bilibili-manga/pdf-page-046.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-046-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1587776,
+      "sha256": "37cb478a1c73a6485fa459aa7717e0b55dc558a6f7ff952b8cc27f2e153cbcae"
+    },
+    {
+      "page": 47,
+      "src": "/images/projects/bilibili-manga/pdf-page-047.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-047-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 971842,
+      "sha256": "89f9680cb912bcf335b4ba5ed921e2b47eb31e644da1bb4c90a80fc03b96e185"
+    },
+    {
+      "page": 48,
+      "src": "/images/projects/bilibili-manga/pdf-page-048.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-048-1280.webp",
+      "width": 2560,
+      "height": 1487,
+      "bytes": 1485980,
+      "sha256": "de68dceddc0a86b1afa9be989847d8df1524e937bf7534f7e0ae76b090b784ad"
+    },
+    {
+      "page": 49,
+      "src": "/images/projects/bilibili-manga/pdf-page-049.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-049-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1652700,
+      "sha256": "ace7779df7da5cc75da092f5b1606536fe9710534923b860d6fd0682e1a00e1d"
+    },
+    {
+      "page": 50,
+      "src": "/images/projects/bilibili-manga/pdf-page-050.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-050-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1427552,
+      "sha256": "926a82f4fa87949be9bfb26678b57f7ff3467662f74d4fdb33a0d3ebef9b0f09"
+    },
+    {
+      "page": 51,
+      "src": "/images/projects/bilibili-manga/pdf-page-051.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-051-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 526410,
+      "sha256": "d28749453358105bfd6388ebee6f93c51eab90b8af89f8e4e3b44c4f4d46faf5"
+    },
+    {
+      "page": 52,
+      "src": "/images/projects/bilibili-manga/pdf-page-052.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-052-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 287574,
+      "sha256": "7dd50541ab4db3fd0440c32ee45a18a65f0d11a0942416d62b620cb124e7ca4c"
+    },
+    {
+      "page": 53,
+      "src": "/images/projects/bilibili-manga/pdf-page-053.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-053-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 462886,
+      "sha256": "213c7fc8b04fabf9d0617c4d5201fb27196f8e21f9d970a97f7db1e98ed2dfdb"
+    },
+    {
+      "page": 54,
+      "src": "/images/projects/bilibili-manga/pdf-page-054.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-054-1280.webp",
+      "width": 2560,
+      "height": 1422,
+      "bytes": 657492,
+      "sha256": "0a766f70997be35fa47bd7be358df6c49cf9f90b7bfcb388f518dbe518186bed"
+    },
+    {
+      "page": 55,
+      "src": "/images/projects/bilibili-manga/pdf-page-055.webp",
+      "preview": "/images/projects/bilibili-manga/pdf-page-055-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 997128,
+      "sha256": "e2315440f7d025911749afbb2b8f690ed3e4da0d81ee55ee99022e073b0f1463"
+    }
+  ],
+  "imageFormat": "Lossless WebP; full-page compositions; 2560px and 1280px widths"
+}

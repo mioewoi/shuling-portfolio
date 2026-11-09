@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 2147228258">
+<path id="Rectangle 1000002804" d="M35.9672 4.88222C33.7054 1.81227 30.1192 0 26.3061 0H12C5.37258 0 0 5.37258 0 12V25C0 31.6274 5.37259 37 12 37H26.3061C30.1192 37 33.7054 35.1877 35.9672 32.1178L43.378 22.0589C44.9373 19.9425 44.9373 17.0575 43.378 14.9411L35.9672 4.88222Z" fill="url(#paint0_linear_0_4)"/>
+<path id="Rectangle 1000002806" d="M63.9672 4.88222C61.7054 1.81227 58.1192 0 54.3061 0H40C33.3726 0 28 5.37258 28 12V25C28 31.6274 33.3726 37 40 37H54.3061C58.1192 37 61.7054 35.1877 63.9672 32.1178L71.378 22.0589C72.9373 19.9425 72.9373 17.0575 71.378 14.9411L63.9672 4.88222Z" fill="url(#paint1_linear_0_4)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_4" x1="47.7037" y1="18.5" x2="1.41996" y2="18.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7FA4FA"/>
+<stop offset="1" stop-color="#7FA4FA" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_4" x1="75.7037" y1="18.5" x2="29.42" y2="18.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7FA4FA"/>
+<stop offset="1" stop-color="#7FA4FA" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,82 @@
+{
+  "project": "xiaoxiang",
+  "sourcePdf": "实习+B站+小象10.7整合.pdf",
+  "firstPage": 56,
+  "lastPage": 63,
+  "count": 8,
+  "pages": [
+    {
+      "page": 56,
+      "src": "/images/projects/xiaoxiang/pdf-page-056.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-056-1280.webp",
+      "width": 2560,
+      "height": 2655,
+      "bytes": 3441798,
+      "sha256": "2bf8fb27fda906b216dc0eb2c44b5efe1dcd4de5b4d213bf43eb695f389650bb"
+    },
+    {
+      "page": 57,
+      "src": "/images/projects/xiaoxiang/pdf-page-057.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-057-1280.webp",
+      "width": 2560,
+      "height": 1552,
+      "bytes": 854166,
+      "sha256": "4e3607177e1669d1abb687e6176ceeaf3ff56ccf3b9571e117d80ac157eb3481"
+    },
+    {
+      "page": 58,
+      "src": "/images/projects/xiaoxiang/pdf-page-058.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-058-1280.webp",
+      "width": 2560,
+      "height": 1964,
+      "bytes": 3089608,
+      "sha256": "b8cef93fbae44449c4603ba8dc42430a55b2773caa2449db87aa75bfed3583ef"
+    },
+    {
+      "page": 59,
+      "src": "/images/projects/xiaoxiang/pdf-page-059.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-059-1280.webp",
+      "width": 2560,
+      "height": 3574,
+      "bytes": 1374096,
+      "sha256": "782c94dde14d8c85aa9c0b9abba9982d7ddaea2fe3db79ac804d4dde3dad823b"
+    },
+    {
+      "page": 60,
+      "src": "/images/projects/xiaoxiang/pdf-page-060.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-060-1280.webp",
+      "width": 2560,
+      "height": 1467,
+      "bytes": 2464864,
+      "sha256": "37bfb8616756e6dfcf945bd346e153b10c7a634cc4b19a5cc56eeca88b99864d"
+    },
+    {
+      "page": 61,
+      "src": "/images/projects/xiaoxiang/pdf-page-061.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-061-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 2460080,
+      "sha256": "ab3fcd3848594d2a539dc43ee4c9f399addb87267416a0216bff5c7c66a0999e"
+    },
+    {
+      "page": 62,
+      "src": "/images/projects/xiaoxiang/pdf-page-062.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-062-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1552220,
+      "sha256": "a6192e8d01dd9973f5eed0f2d3adb0bbd58b1198e2e6bfe0416c09c4141f1478"
+    },
+    {
+      "page": 63,
+      "src": "/images/projects/xiaoxiang/pdf-page-063.webp",
+      "preview": "/images/projects/xiaoxiang/pdf-page-063-1280.webp",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 1682194,
+      "sha256": "6a71f66ae26dc6e82df7001063b43b3f8871771a0cbadfd364c4df5cba03f8bd"
+    }
+  ],
+  "imageFormat": "Lossless WebP; full-page compositions; 2560px and 1280px widths"
+}

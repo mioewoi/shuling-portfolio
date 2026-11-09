@@ -1,0 +1,136 @@
+.hero-project > .hero-project__link,.universe-hero__copy { transition: opacity 300ms ease, filter 300ms ease, transform 300ms ease; }
+.universe-hero[data-active-project] .hero-project[data-active="false"] > .hero-project__link { opacity: .25; filter: blur(8px); transform: scale(.96); }
+.universe-hero[data-active-project] .universe-hero__copy { opacity: .2; filter: blur(8px); }
+/* Entry hit targets stay above every preview, including during a crossfade. */
+.hero-project > .hero-project__link { position: relative; z-index: 20; }
+.hero-project > .hero-project__link::before { content: ''; position: absolute; width: 200px; height: 150px; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.universe-hero[data-active-project] .hero-project[data-active="true"] > .hero-project__link { opacity: 0; }
+.hero-project > .hero-project__link:focus-visible { outline-offset: 8px; }
+.hero-project:has(> .hero-project__link:focus-visible) .luxreal-hero-preview[data-active="true"] .luxreal-hero-preview__logo { outline: 2px solid #b9c6e0; outline-offset: 6px; }
+.luxreal-hero-preview { position: absolute; left: 50%; top: max(-198px,calc(150px - clamp(220px,24.2vw,348px))); width: 560px; margin-left: -280px; z-index: 10; pointer-events: none; visibility: hidden; opacity: 0; transform: translateY(20px) scale(.96); transition: opacity 300ms ease, transform 300ms ease, visibility 0s 300ms; }
+.luxreal-hero-preview[data-active="true"] { visibility: visible; opacity: 1; transform: translateY(0) scale(1); transition: opacity 500ms ease-out, transform 500ms cubic-bezier(.2,.7,.2,1), visibility 0s; }
+.luxreal-hero-preview__visual { position: relative; height: 255px; pointer-events: none; perspective: 1000px; }
+/* November exports include perspective, borders and both alpha fades. */
+.luxreal-hero-preview__screen { position: absolute; width: 410px; pointer-events: none; }
+.luxreal-hero-preview__screen img { display: block; width: 100%; height: auto; }
+.luxreal-hero-preview__screen--front {
+  left: 96px;
+  top: -16px;
+  z-index: 1;
+}
+.luxreal-hero-preview__screen--back {
+  left: 10px;
+  top: 18px;
+  width: 400px;
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+.luxreal-hero-preview[data-active="true"] .luxreal-hero-preview__screen--back { opacity: 1; transform: translateX(0); transition-duration: 500ms; }
+.luxreal-hero-preview__float { z-index: 2; }
+.luxreal-hero-preview__float,.hero-preview__layer { position: absolute; height: auto; opacity: 0; transform: translateY(12px); transition: opacity 300ms ease, transform 300ms ease; }
+.luxreal-hero-preview[data-active="true"] .luxreal-hero-preview__float,.luxreal-hero-preview[data-active="true"] .hero-preview__layer { opacity: 1; transform: translateY(0); transition-duration: 450ms; transition-delay: var(--float-delay); }
+.luxreal-hero-preview__float--users { width: 36px; left: 460px; top: 22px; --float-delay: 80ms; }
+.luxreal-hero-preview__float--agent { width: 100px; left: 454px; top: 72px; --float-delay: 130ms; }
+.luxreal-hero-preview__float--story { width: 36px; left: 434px; top: 126px; --float-delay: 180ms; }
+.luxreal-hero-preview__float--branch { width: 28px; left: 472px; top: 166px; --float-delay: 230ms; }
+.luxreal-hero-preview__float--flow { width: 20px; left: 420px; top: 184px; --float-delay: 280ms; }
+/* Only controls intercept clicks; visible art and bridges use geometric hit testing. */
+.luxreal-hero-preview[data-active="true"] [data-hero-region] { pointer-events: auto; }
+.luxreal-hero-preview__information { position: relative; text-align: center; opacity: 0; transform: translateY(12px); clip-path: polygon(0 0,68% 0,68% 72px,100% 72px,100% 100%,0 100%); transition: opacity 300ms ease, transform 300ms ease; }
+.luxreal-hero-preview[data-active="true"] .luxreal-hero-preview__information { opacity: 1; transform: translateY(0); transition-duration: 450ms; transition-delay: 80ms; }
+.luxreal-hero-preview__logo { display: block; width: 60px; margin: 0 auto 20px; }
+.luxreal-hero-preview__logo img { display: block; border-radius: 12px; }
+.luxreal-hero-preview h2 { font-size: 28px; font-weight: 400; line-height: 40px; letter-spacing: -.03em; }
+.luxreal-hero-preview p { font-size: 12px; line-height: 22px; margin: 6px auto 8px; color: #d0d0d4; }
+.luxreal-hero-preview__details { display: inline-flex; align-items: center; gap: 12px; padding: 8px 12px; color: #b8b9be; font-size: 14px; }
+.luxreal-hero-preview__details:hover { color: white; }
+.luxreal-hero-preview__details span { transition: transform 250ms ease; }
+.luxreal-hero-preview__details:hover span { transform: translateX(4px); }
+.luxreal-hero-preview__close { display: none; }
+.luxreal-hero-preview:not([data-project="luxreal"]) .luxreal-hero-preview__information { clip-path: none; }
+.hero-preview__composition { position: absolute; bottom: 0; left: 50%; width: 560px; height: 255px; margin-left: -280px; transform: scale(var(--art-scale,1)); transform-origin: center bottom; pointer-events: none; perspective: 1000px; }
+.hero-preview__layer { pointer-events: none; }
+.hero-preview__layer img { display: block; width: 100%; height: auto; }
+/* Mobile exports already contain perspective and feathering. */
+.hero-preview__layer--mobile-library { width: 190px; left: 270px; top: -10px; }
+.hero-preview__layer--mobile-editor { width: 205px; left: 112px; top: 18px; }
+.hero-preview__layer--mobile-character-one { width: 32px; left: 157px; top: -5px; }
+.hero-preview__layer--mobile-character-two { width: 42px; left: 214px; top: -18px; }
+.hero-preview__layer--mobile-character-one img { transform: rotate(-13deg); border-radius: 4px; }
+.hero-preview__layer--mobile-character-two img { transform: rotate(-9deg); border-radius: 4px; }
+/* Preserve export canvas ratios, including their transparent lower feather. */
+.hero-preview__layer--bili-review { width: 245px; left: 112px; top: 24px; }
+.hero-preview__layer--bili-discover { width: 225px; left: 230px; top: -5px; }
+.hero-preview__layer--bili-love { width: 46px; left: 187px; top: -18px; }
+.hero-preview__layer--bili-cold { width: 15px; left: 108px; top: 104px; }
+.hero-preview__layer--bili-cry { width: 29px; left: 79px; top: 130px; }
+.hero-preview__layer--bili-laugh { width: 54px; left: 432px; top: 173px; }
+.hero-preview__layer--market-spring { width: 112px; left: 70px; top: 88px; }
+.hero-preview__layer--market-picnic { width: 120px; left: 192px; top: 0; }
+.hero-preview__layer--market-bamboo { width: 120px; left: 290px; top: 46px; }
+.hero-preview__layer--market-ocean { width: 114px; left: 389px; top: 88px; }
+.hero-preview__layer--market-spring img { transform: perspective(700px) rotateY(-8deg) rotateZ(-17deg) scaleY(.75); }
+.hero-preview__layer--market-picnic img { transform: rotate(-2deg); }
+.hero-preview__layer--market-bamboo img { transform: perspective(700px) rotateY(-8deg) rotateZ(13deg) scaleY(.82); }
+.hero-preview__layer--market-ocean img { transform: perspective(700px) rotateY(-8deg) rotateZ(28deg) scaleY(.75); }
+.hero-preview__layer[class*="--market-"] img { transform-origin: center top; border: 2px solid #ffffff30; border-radius: 12px; mask-image: linear-gradient(#000 65%,transparent 100%); }
+@media (min-width:601px) and (max-width:1279px) {
+  .luxreal-hero-preview { width: 480px; margin-left: -80px; top: -125px; }
+  .luxreal-hero-preview__visual { height: 260px; }
+  .luxreal-hero-preview__screen { width: 340px; }
+  .luxreal-hero-preview__screen--front { left: 70px; }
+  .luxreal-hero-preview__float { margin-left: -75px; }
+  .luxreal-hero-preview__information { clip-path: none; }
+  .luxreal-hero-preview h2 { font-size: 25px; }
+  .hero-project:not([data-project="luxreal"]) { position: static; }
+  .luxreal-hero-preview:not([data-project="luxreal"]) { left: clamp(0px,calc((var(--project-index) + .5) * 25% - 240px),calc(100% - 480px)); margin-left: 0; }
+  .hero-preview__composition { --art-scale: .8; }
+}
+@media (min-width:601px) and (max-width:1023px) {
+  .hero-project > .hero-project__link::before { width: min(200px,calc((100vw - 108px) / 4)); }
+}
+@media (min-width:1024px) and (max-width:1279px) {
+  .luxreal-hero-preview { top: calc(150px - 24.2vw); }
+  .luxreal-hero-preview__visual { height: max(260px,calc(24.2vw - 10px)); }
+}
+@media (max-width:600px) {
+  .hero-projects > .hero-project { position: static; }
+  .hero-project > .hero-project__link::before { width: min(150px,calc((100vw - 58px) / 2)); height: 130px; }
+  .universe-hero[data-active-project] .hero-project[data-active="true"] > .hero-project__link { opacity: 1; }
+  .luxreal-hero-preview { left: 0; top: calc(100% + 8px); width: 100%; margin-left: 0; }
+  .luxreal-hero-preview__visual { height: 110px; }
+  .luxreal-hero-preview__screen { width: 70%; }
+  .luxreal-hero-preview__screen--front { left: 20%; top: 8px; }
+  .luxreal-hero-preview__screen--back { left: 6%; top: 16px; }
+  .luxreal-hero-preview__float { display: none; }
+  .luxreal-hero-preview__information { clip-path: none; }
+  .luxreal-hero-preview__logo { width: 32px; margin-bottom: 4px; }
+  .luxreal-hero-preview__logo img { width: 32px; height: 32px; border-radius: 6px; }
+  .luxreal-hero-preview h2 { font-size: 21px; line-height: 30px; }
+  .luxreal-hero-preview p { font-size: 11px; line-height: 18px; max-width: 320px; margin: 4px auto; }
+  .luxreal-hero-preview__details { font-size: 13px; padding: 6px 12px; }
+  .luxreal-hero-preview__close { display: inline-block; padding: 6px 12px; border: 0; background: transparent; color: #b8b9be; font-size: 12px; }
+  .hero-preview__composition { --art-scale: .42; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .universe-hero::after { transition: none; }
+  .luxreal-hero-preview,.luxreal-hero-preview *,.hero-project,.hero-project__link,.universe-hero__copy { transition: none !important; }
+}
+.universe-hero::after {
+  /* Above both background sources, below the Hero content; limited to Hero height. */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: rgb(0 0 0 / 80%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 77%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 77%, transparent 100%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.universe-hero[data-active-project]::after { opacity: 1; }
+@media(prefers-reduced-motion:reduce) { .universe-hero::after { transition: none; } }
