@@ -1,14 +1,12 @@
 /* Figma 399:729: 437 × 264, 20px inset, square corners, #1b1b1b. */
 .contact-dialog {
-  position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none;
-  margin: 0; padding: 16px; border: 0; background: rgb(0 0 0 / 60%); color: #fff;
-  overflow: hidden; overscroll-behavior: contain; opacity: 0; transition: opacity 200ms ease;
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; pointer-events: none; width: 100%; height: 100dvh; max-width: none; max-height: none;
+  margin: 0; padding: 16px; border: 0; background: transparent; color: #fff;
+  overflow: hidden; opacity: 0; transition: opacity 200ms ease;
 }
-.contact-dialog[open] { display: grid; place-items: center; }
-.contact-dialog::backdrop { background: transparent; }
 .contact-dialog[data-visible="true"] { opacity: 1; transition-duration: 300ms; }
 .contact-dialog__card {
-  position: relative; width: min(437px,100%); max-height: 100%; overflow: auto;
+  position: relative; pointer-events: auto; width: min(437px,100%); max-height: 100%; overflow: auto;
   background: #1b1b1b; color: #fff;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 10px; line-height: 14px;
   transform: translateY(12px) scale(.96); transition: transform 200ms ease;

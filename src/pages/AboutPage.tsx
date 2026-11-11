@@ -1,3 +1,4 @@
+import { AboutLifeCarousel } from '../components/AboutLifeCarousel'
 import { Footer } from '../components/Footer'
 import { ToolkitDock } from '../components/ToolkitDock'
 import { aboutExperience } from '../data/aboutExperience'
@@ -40,7 +41,7 @@ export function AboutPage() {
       <section className="about-life" aria-labelledby="life-title">
         <h2 id="life-title">工作之余</h2>
         <div className="about-life__grid">
-          <img className="about-life__dog" src="/images/about/life-01.webp" alt="生活里的小狗" loading="lazy" decoding="async" />
+          <AboutLifeCarousel />
           <div className="about-life__column">
             <img src="/images/about/life-02.webp" alt="现场音乐与舞台演出" loading="lazy" decoding="async" />
             <img className="about-life__focus" src="/images/about/life-03.webp" alt="Hollow Knight Silksong" loading="lazy" decoding="async" />

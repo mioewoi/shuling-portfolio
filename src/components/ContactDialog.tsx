@@ -2,59 +2,43 @@ import { Icon } from './Icon'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 
-// Native dialog supplies top-layer rendering, background inertness and Tab containment.
+// Non-modal: only the card intercepts pointers; background and keyboard navigation stay available.
 export function ContactDialog({ children, onClosed }: { children: ReactNode; onClosed: () => void }) {
-  const dialogRef = useRef<HTMLDialogElement>(null)
+  const cardRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const dismissRef = useRef(onClosed)
+  dismissRef.current = onClosed
   const [visible, setVisible] = useState(false)
-  const closing = useRef(false)
-  const exitTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-  const dismiss = () => {
-    if (closing.current) return
-    closing.current = true
-    setVisible(false)
-    exitTimer.current = setTimeout(onClosed, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 200)
-  }
 
   useEffect(() => {
-    const dialog = dialogRef.current!
     const trigger = document.activeElement instanceof HTMLElement ? document.activeElement : null
-    const root = document.documentElement
-    const previousOverflow = root.style.overflow
-    const previousGutter = root.style.scrollbarGutter
-    if (window.innerWidth > root.clientWidth) root.style.scrollbarGutter = 'stable'
-    root.style.overflow = 'hidden'
-    dialog.showModal()
+    const card = cardRef.current
+    closeRef.current?.focus({ preventScroll: true })
     const frame = requestAnimationFrame(() => setVisible(true))
+    const escape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault()
+        dismissRef.current()
+      }
+    }
+    document.addEventListener('keydown', escape)
     return () => {
       cancelAnimationFrame(frame)
-      clearTimeout(exitTimer.current)
-      dialog.close()
-      root.style.overflow = previousOverflow
-      root.style.scrollbarGutter = previousGutter
-      if (trigger?.isConnected) trigger.focus({ preventScroll: true })
+      document.removeEventListener('keydown', escape)
+      // Restore focus only if it is still in this card, never steal it from background navigation.
+      if (card?.contains(document.activeElement) && trigger?.isConnected) trigger.focus({ preventScroll: true })
     }
   }, [])
 
-  return createPortal(<dialog ref={dialogRef} className="contact-dialog" aria-labelledby="contact-dialog-title" data-visible={visible}
-    onKeyDown={event => {
-      if (event.key !== 'Tab') return
-      const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], [tabindex="0"]'))
-      const index = controls.indexOf(document.activeElement as HTMLElement)
-      if (event.shiftKey && index <= 0 || !event.shiftKey && (index === controls.length - 1 || index < 0)) {
-        event.preventDefault()
-        controls[event.shiftKey ? controls.length - 1 : 0]?.focus({ preventScroll: true })
-      }
-    }}
-    onCancel={event => { event.preventDefault(); dismiss() }}
-    onClick={event => { if (event.target === event.currentTarget) dismiss() }}>
-    <div className="contact-dialog__card">
+  return createPortal(<div className="contact-dialog" data-visible={visible}>
+    <div ref={cardRef} className="contact-dialog__card" role="dialog" aria-labelledby="contact-dialog-title">
       <div className="contact-dialog__content">
-      <button type="button" className="contact-dialog__close" aria-label="关闭 Contact Me" onClick={dismiss} autoFocus>
+      <button ref={closeRef} type="button" className="contact-dialog__close" aria-label="关闭 Contact Me" onClick={onClosed}>
         <span>关闭</span>
         <Icon name="close" />
       </button>
       {children}
       </div>
     </div>
-  </dialog>, document.body)
+  </div>, document.body)
 }

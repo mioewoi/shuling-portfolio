@@ -27,3 +27,6 @@ test-results/
 .vscode/
 .idea/
 Thumbs.db
+
+# Recoverable local snapshots are not publishing assets.
+backups/

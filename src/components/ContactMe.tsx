@@ -43,10 +43,11 @@ function ContactContent() {
 
 export function ContactProvider({ children }: { children: ReactNode }) {
   const location = useLocation()
+  const route = location.pathname + location.search + location.hash
   const [openedAt, setOpenedAt] = useState<string | null>(null)
-  useEffect(() => { setOpenedAt(null) }, [location.key])
-  return <ContactContext.Provider value={() => setOpenedAt(location.key)}>
+  useEffect(() => { setOpenedAt(null) }, [route])
+  return <ContactContext.Provider value={() => setOpenedAt(route)}>
     {children}
-    {openedAt === location.key && <ContactDialog onClosed={() => setOpenedAt(null)}><ContactContent /></ContactDialog>}
+    {openedAt === route && <ContactDialog onClosed={() => setOpenedAt(null)}><ContactContent /></ContactDialog>}
   </ContactContext.Provider>
 }

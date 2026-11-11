@@ -22,35 +22,23 @@ export function DetailImageSequence({ images, title, eager = false }: {
   )}</div>
 }
 
-/** LuxReal mobile demo only: load on entry and leave native playback controls available. */
-export function DetailVideo() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const [autoplayEnabled] = useState(() =>
-    !window.matchMedia('(prefers-reduced-motion: reduce)').matches)
-  const [failed, setFailed] = useState(false)
+/** Figma iPhone 17 - 1: fixed 402 × 874 viewport, uniformly scaled only on narrow screens. */
+export function LuxRealMobileDemo() {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [scale, setScale] = useState(1)
   useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-    // Restore the source when React checks effect cleanup in development StrictMode.
-    if (!video.getAttribute('src')) video.src = '/videos/projects/luxreal-mobile/interaction-demo.mp4'
-    video.muted = true
-    if (autoplayEnabled) {
-      // One attempt per mount: a blocked request falls back to the native play button.
-      void video.play().catch(() => {})
-    }
-    return () => {
-      video.pause()
-      video.removeAttribute('src')
-      video.load()
-    }
-  }, [autoplayEnabled])
-  return <div className="case-study__demo">
-    <video ref={videoRef} width={1080} height={2328} autoPlay={autoplayEnabled} muted loop controls playsInline
-      preload="auto" aria-label="LuxReal 移动端交互 Demo"
-      src="/videos/projects/luxreal-mobile/interaction-demo.mp4"
-      onError={() => setFailed(true)}>
-      你的浏览器不支持视频播放。
-    </video>
-    {failed && <p className="case-study__media-error">视频暂时无法播放，请刷新后重试。</p>}
+    const container = containerRef.current
+    if (!container) return
+    const observer = new ResizeObserver(([entry]) => {
+      setScale(Math.min(1, entry.contentRect.width / 402))
+    })
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [])
+  return <div ref={containerRef} className="case-study__mobile-demo" style={{ borderRadius: 30 * scale }}>
+    <iframe title="LuxReal 移动端交互 Demo" width={402} height={874}
+      src="https://mioewoi.github.io/LuxReal-/"
+      sandbox="allow-scripts allow-same-origin allow-forms"
+      style={{ transform: `scale(${scale})` }} />
   </div>
 }

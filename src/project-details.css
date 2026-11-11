@@ -147,9 +147,11 @@ body:has(.case-study--luxreal) .site-footer a { display: flex; align-items: cent
 
 /* Additional cases use their individual Figma composition; existing three galleries stay unchanged. */
 /* Detail media follows the shared column without cropping its source ratio. */
-.case-study__demo { width: 100%; max-width: 852px; margin-inline: auto; }
-.case-study__demo video { display: block; width: 100%; height: auto; object-fit: contain; background: #080808; color-scheme: dark; }
-.case-study__media-error { font-size: 12px; color: #929497; margin-top: 16px; }
+/* Computer Use inspection: centered in the 852px column, 402 × 874, radius 30, clip on.
+   Main Content: X=519, Y=359; header ends at 359; overview starts at 1233. */
+.case-study__mobile-demo { position: relative; width: min(402px, 100%); aspect-ratio: 402 / 874; margin-inline: auto; overflow: hidden; background: #000; }
+.case-study__mobile-demo iframe { position: absolute; inset: 0; display: block; width: 402px; height: 874px; border: 0; border-radius: 30px; transform-origin: top left; color-scheme: dark; }
+.case-study--mobile-exploration .detail-heading { padding-bottom: 40px; }
 .case-study .case-study__overview,
 .case-study .case-study__book-information { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; padding-block: 75px; }
 .case-study__overview h2, .case-study__book-information h2, .case-study__gallery-heading h2 { font-size: 24px; font-weight: 400; }

@@ -1,7 +1,8 @@
+import { LuxRealMobileCaseStudy } from './LuxRealMobileCaseStudy'
 import { MaryCelesteImage } from './MaryCelesteImage'
 import { extendedProjectMedia } from '../data/extendedProjectMedia'
 import { caseOverviews } from '../data/extendedProjectContent'
-import { DetailImage, DetailImageSequence, DetailVideo } from './ProjectDetailMedia'
+import { DetailImage, DetailImageSequence } from './ProjectDetailMedia'
 
 export const extendedProjectSlugs = ['mobile-exploration', 'baidu-netdisk', 'secondhand-bookshop', 'chess-box', 'pavilions', 'mary-celeste'] as const
 export function hasExtendedProject(slug: string) {
@@ -29,7 +30,7 @@ export function ExtendedProjectContent({ slug, title }: { slug: string; title: s
     <section className="case-study__book-information detail-section"><div><p className="eyebrow">02 / INFORMATION</p><h2>基础信息</h2></div>
       <dl className="case-study__facts">{[['01', '尺寸', '2m * 2m'], ['02', '纸张', '牛皮纸']].map(([number, label, value]) => <div key={number}><span aria-hidden="true">{number}</span><div><dt>{label}</dt><dd>{value}</dd></div></div>)}</dl>
     </section></>
-  if (slug === 'mobile-exploration') return <><DetailVideo /><Overview slug={slug} /></>
+  if (slug === 'mobile-exploration') return <LuxRealMobileCaseStudy />
   if (slug === 'baidu-netdisk') return <DetailImageSequence images={extendedProjectMedia[slug]} title={title} eager />
   if (slug === 'secondhand-bookshop') {
     const [cover, ...pages] = extendedProjectMedia[slug]

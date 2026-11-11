@@ -89,3 +89,19 @@
   .toolkit-dock__tooltip { transition: none; }
   .toolkit-dock__item, .toolkit-dock__item img { transform: none; }
 }
+
+/* Only the existing large life-photo cell becomes a manual carousel. */
+.about-life-carousel { position: relative; width: 100%; height: 100%; aspect-ratio: auto; min-width: 0; min-height: 0; overflow: hidden; border-radius: 6px; background: #080808; touch-action: pan-y pinch-zoom; }
+.about-life__grid .about-life-carousel__image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms ease-in-out; pointer-events: none; }
+.about-life__grid .about-life-carousel__image.is-active { opacity: 1; }
+.about-life-carousel__arrow { position: absolute; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 40px; height: 44px; padding: 0; border: 1px solid #ffffff30; border-radius: 50%; background: #08080880; color: #fff; font-size: 30px; line-height: 1; opacity: 0; transition: opacity 180ms ease; }
+.about-life-carousel__arrow--previous { left: 12px; }
+.about-life-carousel__arrow--next { right: 12px; }
+.about-life-carousel:hover .about-life-carousel__arrow, .about-life-carousel:focus-within .about-life-carousel__arrow { opacity: 1; }
+.about-life-carousel__dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; padding: 2px 6px; border-radius: 20px; background: #0808089e; }
+.about-life-carousel__dots button { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; background: transparent; }
+.about-life-carousel__dots span { width: 6px; height: 6px; border-radius: 50%; background: #888; }
+.about-life-carousel__dots [aria-current="true"] span { background: #fff; box-shadow: 0 0 0 2px #ffffff38; }
+@media (hover: none) { .about-life-carousel__arrow { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .about-life-carousel__image, .about-life-carousel__arrow { transition: none; } }
+@media (max-width: 767px) { .about-life-carousel { height: auto; aspect-ratio: 1; } }
